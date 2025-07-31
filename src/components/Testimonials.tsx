@@ -12,7 +12,7 @@ const testimonials = [
     content:
       "This product completely transformed our workflow. The AI automation saves us at least 20 hours per week, allowing our team to focus on strategic initiatives.",
     rating: 5,
-    avatar: "/avatars/sarah-johnson.jpg",
+    avatar: "https://cdn.pixabay.com/photo/2019/09/16/09/29/attractive-4480435_1280.jpg",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const testimonials = [
     content:
       "The implementation was seamless and the results were immediate. Our productivity metrics improved by 35% in the first month alone.",
     rating: 5,
-    avatar: "/avatars/michael-chen.jpg",
+    avatar: "https://cdn.pixabay.com/photo/2019/10/22/13/43/man-4568761_1280.jpg",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const testimonials = [
     content:
       "The collaborative features are game-changing. Our distributed teams can now work together as if they were in the same office.",
     rating: 4,
-    avatar: "/avatars/emma-rodriguez.jpg",
+    avatar: "https://cdn.pixabay.com/photo/2019/09/16/09/29/attractive-4480435_1280.jpg",
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ const testimonials = [
     content:
       "The real-time analytics helped us identify bottlenecks we didn't even know existed. Highly recommended for growing businesses.",
     rating: 5,
-    avatar: "/avatars/david-kim.jpg",
+    avatar: "https://cdn.pixabay.com/photo/2019/10/22/13/43/man-4568761_1280.jpg",
   },
   {
     id: 5,
@@ -48,7 +48,7 @@ const testimonials = [
     content:
       "Worth every penny. The ROI was evident within weeks. Customer support is also exceptional - responsive and knowledgeable.",
     rating: 5,
-    avatar: "/avatars/lisa-wong.jpg",
+    avatar: "https://cdn.pixabay.com/photo/2019/09/16/09/29/attractive-4480435_1280.jpg",
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ const testimonials = [
     content:
       "We've tried many solutions but this one stands out for its intuitive interface and powerful features. Our team adoption was 100% from day one.",
     rating: 5,
-    avatar: "/avatars/james-wilson.jpg",
+    avatar: "https://cdn.pixabay.com/photo/2019/10/22/13/43/man-4568761_1280.jpg",
   },
 ];
 
