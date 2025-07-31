@@ -29,7 +29,7 @@ export default function Hero() {
           </p>
 
           <p className="mt-3 text-sm text-gray-400 italic">
-            "Do I really need this?" — Only if time matters to you.
+            &ldquo;Do I really need this?&rdquo; — Only if time matters to you.
           </p>
 
           <div className="mt-8">
