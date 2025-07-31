@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -12,7 +13,7 @@ const testimonials = [
     content:
       "This product completely transformed our workflow. The AI automation saves us at least 20 hours per week, allowing our team to focus on strategic initiatives.",
     rating: 5,
-    avatar: "https://cdn.pixabay.com/photo/2019/09/16/09/29/attractive-4480435_1280.jpg",
+    avatar: "/images/woman.jpg",
   },
   {
     id: 2,
@@ -21,7 +22,7 @@ const testimonials = [
     content:
       "The implementation was seamless and the results were immediate. Our productivity metrics improved by 35% in the first month alone.",
     rating: 5,
-    avatar: "https://cdn.pixabay.com/photo/2019/10/22/13/43/man-4568761_1280.jpg",
+    avatar: "/images/man.jpg",
   },
   {
     id: 3,
@@ -30,7 +31,7 @@ const testimonials = [
     content:
       "The collaborative features are game-changing. Our distributed teams can now work together as if they were in the same office.",
     rating: 4,
-    avatar: "https://cdn.pixabay.com/photo/2019/09/16/09/29/attractive-4480435_1280.jpg",
+    avatar: "/images/woman.jpg",
   },
   {
     id: 4,
@@ -39,7 +40,7 @@ const testimonials = [
     content:
       "The real-time analytics helped us identify bottlenecks we didn't even know existed. Highly recommended for growing businesses.",
     rating: 5,
-    avatar: "https://cdn.pixabay.com/photo/2019/10/22/13/43/man-4568761_1280.jpg",
+    avatar: "/images/woman.jpg",
   },
   {
     id: 5,
@@ -48,7 +49,7 @@ const testimonials = [
     content:
       "Worth every penny. The ROI was evident within weeks. Customer support is also exceptional - responsive and knowledgeable.",
     rating: 5,
-    avatar: "https://cdn.pixabay.com/photo/2019/09/16/09/29/attractive-4480435_1280.jpg",
+    avatar: "/images/woman.jpg",
   },
   {
     id: 6,
@@ -57,7 +58,7 @@ const testimonials = [
     content:
       "We've tried many solutions but this one stands out for its intuitive interface and powerful features. Our team adoption was 100% from day one.",
     rating: 5,
-    avatar: "https://cdn.pixabay.com/photo/2019/10/22/13/43/man-4568761_1280.jpg",
+    avatar: "/images/woman.jpg",
   },
 ];
 
@@ -115,7 +116,7 @@ export default function TestimonialsCarousel() {
             Trusted by Innovators
           </h2>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            Don't just take our word for it. Here's what our clients say about
+            Don&apos;t just take our word for it. Here&apos;s what our clients say about
             their experience.
           </p>
         </motion.div>
@@ -153,10 +154,12 @@ export default function TestimonialsCarousel() {
                         <div className="flex items-center mb-6">
                           <div className="flex-shrink-0">
                             <div className="relative">
-                              <img
+                              <Image
                                 className="w-14 h-14 rounded-full object-cover border-4 border-white shadow-md"
                                 src={testimonial.avatar}
                                 alt={testimonial.name}
+                                width={400}
+                                height={300}
                                 onError={(
                                   e: React.SyntheticEvent<
                                     HTMLImageElement,

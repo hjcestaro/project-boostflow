@@ -202,7 +202,7 @@ export default function FAQ() {
               Still have questions?
             </h3>
             <p className="text-gray-400 mb-6 max-w-lg mx-auto">
-              Can't find what you're looking for? Our support team is ready to
+              Can&apos;t find what you&apos;re looking for? Our support team is ready to
               help you.
             </p>
             <button className="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-8 rounded-lg transition-colors">
