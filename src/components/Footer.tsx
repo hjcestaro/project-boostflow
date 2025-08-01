@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { Code, Mail, Github, Twitter } from "lucide-react";
-import Link from "next/link";
 
 export default function Footer() {
   const scrollToTop = () => {

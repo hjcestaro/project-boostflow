@@ -95,7 +95,7 @@ export default function Newsletter() {
             </div>
             <h3 className="text-xl font-bold text-white mb-2">Check your email!</h3>
             <p className="text-gray-400">
-              I've sent your free resources to <span className="text-purple-400">{email}</span>
+              {`I've sent your free resources to`} <span className="text-purple-400">{email}</span>
             </p>
           </motion.div>
         )}
