@@ -29,9 +29,6 @@ export default function RootLayout({
           ${geistSans.variable} 
           ${geistMono.variable} 
           antialiased
-          bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#020617] 
-          text-white
-          min-h-screen
         `}
       >
         {children}

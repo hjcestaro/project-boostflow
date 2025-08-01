@@ -1,114 +1,134 @@
 "use client";
 
-import { Zap, RefreshCw, Rocket, ArrowRight } from "lucide-react";
-import { motion, Variants } from "framer-motion";
-
-const features = [
-  {
-    icon: <Zap className="w-6 h-6" />,
-    title: "Automated Workflows",
-    description:
-      "Let AI handle repetitive tasks, so your team can focus on what matters most.",
-    bgColor: "bg-indigo-100",
-    iconColor: "text-indigo-600",
-    hoverColor: "hover:border-indigo-300",
-    linkText: "Explore automation",
-  },
-  {
-    icon: <RefreshCw className="w-6 h-6" />,
-    title: "Real-Time Sync",
-    description:
-      "Instant updates across devices and teams. No delays, no confusion.",
-    bgColor: "bg-emerald-100",
-    iconColor: "text-emerald-600",
-    hoverColor: "hover:border-emerald-300",
-    linkText: "See sync in action",
-  },
-  {
-    icon: <Rocket className="w-6 h-6" />,
-    title: "Productivity Boost",
-    description:
-      "Turn hours of work into minutes with smart task suggestions and automation.",
-    bgColor: "bg-rose-100",
-    iconColor: "text-rose-600",
-    hoverColor: "hover:border-rose-300",
-    linkText: "Boost your workflow",
-  },
-];
-
-const cardVariants: Variants = {
-  hidden: {
-    opacity: 0,
-    y: 40,
-  },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: i * 0.15,
-      duration: 0.5,
-      ease: [0.16, 1, 0.3, 1],
-    },
-  }),
-};
+import {
+  Code,
+  Smartphone,
+  Palette,
+  Zap,
+  Component,
+  LayoutGrid,
+} from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Features() {
+  const features = [
+    {
+      icon: <LayoutGrid className="w-5 h-5" />,
+      title: "All Essential Sections",
+      description:
+        "Hero, Features, Testimonials, FAQ - everything you need for a high-converting LP.",
+      badge: "Ready-to-use",
+    },
+    {
+      icon: <Code className="w-5 h-5" />,
+      title: "Next.js 14 + TypeScript",
+      description:
+        "Built with App Router and modern practices for top performance.",
+      badge: "Trending Tech",
+    },
+    {
+      icon: <Smartphone className="w-5 h-5" />,
+      title: "Fully Responsive",
+      description: "Perfectly adapted for all devices, from mobile to desktop.",
+      badge: "Mobile-First",
+    },
+    {
+      icon: <Palette className="w-5 h-5" />,
+      title: "Easy to Customize",
+      description:
+        "Change colors, fonts, and content with Tailwind CSS classes.",
+      badge: "Dev-Friendly",
+    },
+    {
+      icon: <Zap className="w-5 h-5" />,
+      title: "Optimized Performance",
+      description:
+        "90+ Lighthouse score with optimized images and fast loading.",
+      badge: "Fast",
+    },
+    {
+      icon: <Component className="w-5 h-5" />,
+      title: "Reusable Components",
+      description: "Buttons, cards, and navbars ready for easy customization.",
+      badge: "Modular",
+    },
+  ];
+
   return (
-    <section className="py-28 bg-gradient-to-b from-gray-900 to-gray-800" id="services">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section
+      className="relative py-28 bg-gray-950 overflow-hidden"
+      id="features"
+    >
+      
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-purple-900/20 to-transparent opacity-40" />
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
         <div className="text-center">
           <motion.h2
-            initial={{ opacity: 0, y: -20 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
             className="text-4xl md:text-5xl font-bold text-white"
           >
-            Powerful Features
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">
+              Why Choose This Template
+            </span>
           </motion.h2>
 
           <motion.p
-            initial={{ opacity: 0, y: -10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1, duration: 0.6 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
             viewport={{ once: true }}
-            className="mt-4 text-lg text-gray-400 max-w-2xl mx-auto"
+            className="mt-4 text-xl text-gray-400 max-w-3xl mx-auto"
           >
-            Discover what makes our solution stand out from the competition
+            A{" "}
+            <span className="text-amber-400 font-semibold">
+              single landing page
+            </span>{" "}
+            focused on what really matters -{" "}
+            <span className="text-white">convert visitors</span> and launch fast
           </motion.p>
         </div>
 
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, i) => (
             <motion.div
               key={i}
-              custom={i}
-              variants={cardVariants}
-              initial="hidden"
-              whileInView="visible"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.1, duration: 0.5 }}
               viewport={{ once: true, margin: "-50px" }}
-              className={`relative bg-gray-850 p-8 rounded-xl border border-gray-700 shadow-lg ${feature.hoverColor} hover:shadow-xl transition-all duration-300 group`}
+              className="relative bg-gray-900/50 backdrop-blur-sm p-6 rounded-xl border border-gray-800 hover:border-pink-500/30 transition-all group overflow-hidden"
             >
-              <div
-                className={`absolute top-0 left-6 -translate-y-1/2 p-4 rounded-xl ${feature.bgColor} shadow-md`}
-              >
-                <div className={feature.iconColor}>{feature.icon}</div>
-              </div>
-
-              <div className="mt-8">
-                <h3 className="text-xl font-semibold text-white mb-3">
-                  {feature.title}
-                </h3>
-                <p className="text-gray-400 mb-6">{feature.description}</p>
-
-                <a
-                  href="#"
-                  className="inline-flex items-center text-sm font-medium text-indigo-400 hover:text-indigo-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded"
+              {feature.badge && (
+                <div
+                  className={`absolute top-4 right-4 text-xs font-bold px-2.5 py-0.5 rounded-full border ${
+                    feature.badge === "Ready-to-use"
+                      ? "bg-purple-500/10 text-purple-400 border-purple-500/20"
+                      : feature.badge === "Trending Tech"
+                      ? "bg-blue-500/10 text-blue-400 border-blue-500/20"
+                      : "bg-pink-500/10 text-pink-400 border-pink-500/20"
+                  }`}
                 >
-                  {feature.linkText}
-                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                </a>
+                  {feature.badge}
+                </div>
+              )}
+
+              <div
+                className={`bg-gray-800/50 group-hover:bg-pink-500/10 w-12 h-12 rounded-lg flex items-center justify-center border ${
+                  feature.badge === "Ready-to-use"
+                    ? "border-purple-500/30 group-hover:border-purple-500/50 group-hover:text-white"
+                    : "border-gray-700 group-hover:border-pink-500/30 group-hover:text-white"
+                } transition-all mb-4`}
+              >
+                {feature.icon}
               </div>
+
+              <h3 className="text-xl font-bold text-white mb-2">
+                {feature.title}
+              </h3>
+              <p className="text-gray-400 mb-4">{feature.description}</p>
             </motion.div>
           ))}
         </div>
