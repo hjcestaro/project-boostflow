@@ -59,7 +59,6 @@ export default function Features() {
       className="relative py-28 bg-gray-950 overflow-hidden"
       id="features"
     >
-      
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-purple-900/20 to-transparent opacity-40" />
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
         <div className="text-center">

@@ -4,11 +4,11 @@ import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import { useEffect, useState } from "react";
 import Loading from "@/components/Loading";
 import Newsletter from "@/components/Newsletter";
+import PricingSection from "@/components/Princing";
+import ContactForm from "@/components/Contact";
 
 export default function Home() {
   const [isMounted, setIsMounted] = useState(false);
@@ -21,13 +21,13 @@ export default function Home() {
 
   return (
     <div>
-      <Header />
       <Hero />
       <Features />
       <Testimonials />
+      <PricingSection />
       <FAQ />
+      <ContactForm />
       <Newsletter />
-      <Footer />
     </div>
   );
 }
