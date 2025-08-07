@@ -65,9 +65,10 @@ export default function Newsletter() {
             transition={{ delay: 0.4 }}
             viewport={{ once: true }}
             className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto"
+            aria-live="polite"
           >
             <div className="relative flex-1">
-              <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500" />
+              <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500" aria-hidden="true"/>
               <input
                 type="email"
                 placeholder="your@email.com"
@@ -75,6 +76,7 @@ export default function Newsletter() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                aria-label="Email address"
               />
             </div>
             <button

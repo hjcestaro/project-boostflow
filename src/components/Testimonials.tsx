@@ -15,8 +15,17 @@ const testimonials = [
     rating: 5,
     avatar: "/images/alex.webp",
   },
-  {
+    {
     id: 2,
+    name: "Humberto Silva",
+    role: "Frontend Developer",
+    content:
+      "The best template i ever used it",
+    rating: 5,
+    avatar: "/images/avatar.webp",
+  },
+  {
+    id: 3,
     name: "Julia Martins",
     role: "Marketing Specialist",
     content:
@@ -25,7 +34,7 @@ const testimonials = [
     avatar: "/images/julia.webp",
   },
   {
-    id: 3,
+    id: 4,
     name: "Rafael Silva",
     role: "Freelance Designer",
     content:
@@ -129,21 +138,25 @@ export default function Testimonials() {
               </div>
 
               <blockquote className="text-xl text-white font-medium leading-relaxed mb-8">
-                {`"`}{testimonials[currentIndex].content}{`"`}
+                {`"`}
+                {testimonials[currentIndex].content}
+                {`"`}
               </blockquote>
 
               <div className="flex items-center gap-4">
                 <div className="relative">
                   <Image
                     className="w-14 h-14 rounded-full object-cover border-2 border-pink-500/30"
-                    src={testimonials[currentIndex].avatar}
+                    src={
+                      testimonials[currentIndex].avatar || "/images/avatar.webp"
+                    }
                     alt={testimonials[currentIndex].name}
                     width={56}
                     height={56}
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
                       target.onerror = null;
-                      target.src = "/images/testimonials/default-avatar.webp";
+                      target.src = "/images/avatar.webp";
                     }}
                   />
                 </div>

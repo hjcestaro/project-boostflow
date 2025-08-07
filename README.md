@@ -1,36 +1,127 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📘 BoostFlow — Next.js 14 Landing Page Template
 
-## Getting Started
+**BoostFlow** is a high-converting landing page template built with **Next.js 14**, **Tailwind CSS**, and **Framer Motion**. It’s designed for startups, marketers, and developers looking for a fast, clean, and responsive starting point for any digital product.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 📂 Folder Structure
+
+```
+project-boostflow/
+├── components/
+│   ├── Hero.tsx
+│   └── ...other components
+├── public/
+│   └── images/
+│       └── hero.webp
+├── styles/
+│   └── globals.css
+├── app/
+│   ├── layout.tsx
+│   └── page.tsx
+├── tailwind.config.ts
+├── next.config.js
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- ⚡ Built with **Next.js 14 (App Router)**
+- 🎨 Styled with **Tailwind CSS 3**
+- 🎥 Smooth animations using **Framer Motion**
+- 💡 Ready-to-use components (Hero, Features, Testimonials, FAQ, Newsletter)
+- 📱 Fully **responsive** and mobile-first design
+- 🧩 Easy customization with clean code and Tailwind utility classes
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🧠 Component Overview
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### ✅ Hero Section (`components/Hero.tsx`)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Gradient background with a two-tone text heading
+- Responsive typography
+- Highlighted text (`bg-clip-text`) and color emphasis (`text-amber-300`)
+- Animated image preview with `Framer Motion`
+- Hero image wrapped in soft glowing background using blur and opacity
 
-## Deploy on Vercel
+#### 💡 To Customize:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Change `text` inside the heading and paragraph as needed
+- Replace the `hero.webp` image inside `/public/images/` with your own
+- Adjust colors by editing the Tailwind gradient classes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 💾 Installation
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/your-username/project-boostflow.git
+   ```
+
+2. Navigate to the project folder:
+   ```bash
+   cd project-boostflow
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## 🎨 Customization
+
+You can easily change colors, fonts, spacing, and more by editing:
+
+- `tailwind.config.ts` — for theme tokens and extensions
+- `globals.css` — for any global styles
+- `components/*.tsx` — for markup and Tailwind utility class changes
+
+---
+
+## 🖼️ Image Optimization
+
+- All images are stored in `/public/images/`
+- Use `.webp` or `.avif` for best performance
+- The `<Image />` component from `next/image` is used for automatic optimization
+
+---
+
+## 🌍 SEO & Performance
+
+- `<Head>` tags can be added in `app/layout.tsx` or via metadata for better SEO
+- Optimized for Lighthouse performance (score improvements depend on content size)
+
+---
+
+## 📦 Deployment
+
+You can deploy this project using **Vercel**:
+
+```bash
+vercel
+```
+
+---
+
+## 📌 Notes
+
+- Ensure that your content is royalty-free or you have the right to use it.
+- Replace all example images and text with your project-specific content before uploading to ThemeForest.
+- All code follows ThemeForest submission standards: modular, well-commented, and easy to customize.
+
+---
+
+## 📞 Support
+
+If you have any issues setting up or customizing this theme, feel free to open an issue or contact the author via the marketplace support tab.

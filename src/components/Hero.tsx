@@ -24,6 +24,13 @@ export default function Hero() {
             <span className="text-amber-300">easy customization</span>. Perfect
             for startups and marketers.
           </p>
+
+          <Link
+            href="#features"
+            className="mt-8 inline-block rounded-lg bg-pink-500 px-6 py-3 text-white font-medium hover:bg-pink-600 transition-colors"
+          >
+            Explore Features
+          </Link>
         </div>
 
         <motion.div
@@ -32,13 +39,13 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.2 }}
           className="mt-16 lg:mt-0 relative"
         >
-          <div className="absolute -inset-4 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-3xl blur-xl opacity-30 -z-10" />
+          <div className="absolute -inset-4 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-3xl blur-lg lg:blur-xl opacity-30 -z-10" />
           <Image
             src="/images/hero.webp"
             width={640}
             height={640}
-            alt="Preview of the landing page template showing hero section and features"
-            className="rounded-2xl shadow-2xl ring-1 ring-white/10 hover:ring-pink-500/50 transition-all"
+            alt="Landing page preview com imagem chamativa da seção principal"
+            className="rounded-2xl shadow-2xl ring-1 ring-white/10 hover:ring-pink-500/50 transition-all duration-300"
             priority
             quality={90}
           />

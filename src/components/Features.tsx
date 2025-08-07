@@ -94,11 +94,12 @@ export default function Features() {
           {features.map((feature, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: i % 2 === 0 ? 30 : -30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
               viewport={{ once: true, margin: "-50px" }}
-              className="relative bg-gray-900/50 backdrop-blur-sm p-6 rounded-xl border border-gray-800 hover:border-pink-500/30 transition-all group overflow-hidden"
+              role="listitem"
+              className="relative bg-gray-900/50 backdrop-blur-sm p-6 rounded-xl border border-gray-800 hover:border-pink-500/30 hover:shadow-lg hover:shadow-pink-500/10 transition-all group overflow-hidden"
             >
               {feature.badge && (
                 <div

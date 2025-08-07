@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code, Mail, Github, Twitter } from "lucide-react";
+import { Code, Mail, Facebook, Twitter, Instagram } from "lucide-react";
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -31,8 +31,8 @@ export default function Footer() {
             <div className="flex gap-4">
               {[
                 {
-                  icon: <Github className="w-5 h-5" />,
-                  label: "GitHub",
+                  icon: <Facebook className="w-5 h-5" />,
+                  label: "Facebook",
                   href: "#",
                 },
                 {
@@ -41,8 +41,8 @@ export default function Footer() {
                   href: "#",
                 },
                 {
-                  icon: <Mail className="w-5 h-5" />,
-                  label: "Email",
+                  icon: <Instagram className="w-5 h-5" />,
+                  label: "Instagram",
                   href: "#",
                 },
               ].map((social, i) => (
@@ -60,34 +60,6 @@ export default function Footer() {
                 </motion.a>
               ))}
             </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4, duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <h3 className="text-sm font-semibold text-white mb-4">
-              STAY UPDATED
-            </h3>
-            <p className="text-sm mb-4">
-              Get notified about new templates and updates.
-            </p>
-            <form className="flex gap-2">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="flex-1 bg-gray-900 border border-gray-800 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-purple-500"
-                required
-              />
-              <button
-                type="submit"
-                className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-all"
-              >
-                Join
-              </button>
-            </form>
           </motion.div>
         </div>
 

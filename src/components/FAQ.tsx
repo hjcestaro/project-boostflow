@@ -47,7 +47,7 @@ const categories = [
   { id: "all", name: "All Questions" },
   { id: "template", name: "Template" },
   { id: "customization", name: "Customization" },
-  { id: "technology", name: "Tech" },
+  { id: "technology", name: "Technology" },
   { id: "license", name: "License" },
   { id: "support", name: "Support" },
   { id: "purchase", name: "Purchase" }
@@ -136,7 +136,7 @@ export default function FAQ() {
                     <div className={`p-2 rounded-lg ${
                       item.category === "Template" ? "bg-purple-500/10 text-purple-400" :
                       item.category === "Customization" ? "bg-amber-500/10 text-amber-400" :
-                      item.category === "Tech" ? "bg-blue-500/10 text-blue-400" :
+                      item.category === "Technology" ? "bg-blue-500/10 text-blue-400" :
                       item.category === "License" ? "bg-indigo-500/10 text-indigo-400" :
                       item.category === "Support" ? "bg-emerald-500/10 text-emerald-400" :
                       "bg-pink-500/10 text-pink-400"

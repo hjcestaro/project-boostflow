@@ -70,7 +70,7 @@ export default function ContactForm() {
                   className="w-full bg-gray-800/70 border border-gray-700 rounded-lg px-4 py-3 pl-10 text-white focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500 transition-all"
                   placeholder="Your full name"
                 />
-                <div className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500">
+                <div className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500" aria-hidden="true">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
                     <circle cx="12" cy="7" r="4"></circle>
@@ -150,6 +150,7 @@ export default function ContactForm() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
+            aria-live="polite"
             className="bg-green-900/20 border border-green-800/50 text-center p-8 md:p-10 rounded-xl backdrop-blur-sm"
           >
             <div className="flex flex-col items-center">
